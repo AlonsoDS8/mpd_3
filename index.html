@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"secondary-fixed-dim":"#89ceff","on-background":"#dae2fd","surface-bright":"#31394d","on-tertiary-container":"#000703","secondary":"#89ceff","surface":"#0b1326","inverse-surface":"#dae2fd","tertiary-container":"#00885d","inverse-primary":"#494bd6","primary-fixed-dim":"#c0c1ff","on-primary-fixed":"#07006c","outline":"#908fa0","primary-fixed":"#e1e0ff","surface-dim":"#0b1326","inverse-on-surface":"#283044","surface-container-high":"#222a3d","background":"#0b1326","error":"#ffb4ab","on-primary-container":"#0d0096","surface-container-low":"#131b2e","on-secondary":"#00344d","on-error":"#690005","tertiary-fixed-dim":"#4edea3","surface-container":"#171f33","secondary-container":"#00a2e6","on-secondary-fixed":"#001e2f","outline-variant":"#464554","secondary-fixed":"#c9e6ff","error-container":"#93000a","on-secondary-fixed-variant":"#004c6e","on-surface-variant":"#c7c4d7","surface-container-highest":"#2d3449","on-tertiary-fixed-variant":"#005236","surface-container-lowest":"#060e20","on-surface":"#dae2fd","surface-tint":"#c0c1ff","primary-container":"#8083ff","on-secondary-container":"#00344e","tertiary":"#4edea3","tertiary-fixed":"#6ffbbe","on-primary":"#1000a9","surface-variant":"#2d3449","on-primary-fixed-variant":"#2f2ebe","primary":"#c0c1ff","on-tertiary":"#003824","on-tertiary-fixed":"#002113","on-error-container":"#ffdad6"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-sm":"0.5rem","gutter-desktop":"1.5rem","margin-desktop":"2rem","space-xl":"2rem","margin":"1rem","gutter":"1rem","space-xs":"0.25rem","margin-tablet":"1.5rem","space-lg":"1.25rem","space-md":"0.75rem"},"fontFamily":{"body-md":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-numeric":["JetBrains Mono"],"display-lg-mobile":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"label-tag":["JetBrains Mono"],"body-lg":["Plus Jakarta Sans"],"label-kpi":["JetBrains Mono"],"headline-sm":["Plus Jakarta Sans"]},"fontSize":{"body-md":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0em","fontWeight":"400"}],"body-sm":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.01em","fontWeight":"400"}],"headline-md":["1.5rem",{"lineHeight":"2rem","letterSpacing":"-0.02em","fontWeight":"600"}],"label-numeric":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"-0.01em","fontWeight":"500"}],"display-lg-mobile":["1.75rem",{"lineHeight":"2.25rem","letterSpacing":"-0.02em","fontWeight":"700"}],"display-lg":["2.25rem",{"lineHeight":"2.75rem","letterSpacing":"-0.025em","fontWeight":"700"}],"label-tag":["0.6875rem",{"lineHeight":"0.875rem","letterSpacing":"0.05em","fontWeight":"500"}],"body-lg":["1rem",{"lineHeight":"1.5rem","letterSpacing":"-0.01em","fontWeight":"400"}],"label-kpi":["1.75rem",{"lineHeight":"2rem","letterSpacing":"-0.03em","fontWeight":"600"}],"headline-sm":["1.125rem",{"lineHeight":"1.5rem","letterSpacing":"-0.015em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_4px_20px_-2px_rgba(0,0,0,0.4)]"><div class="h-16 w-full px-margin-desktop flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-lg flex-shrink-0"><div class="flex items-center gap-space-sm"><img alt="SegmentIQ Analytics Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WxXXrUlOs7bjDbAeDeP6tVmAMvgn7XXfc4DUxaPcgpCcWQPS-a11X-5E1VtDgX4uKmrXJLKYK1yQGXAEwqvC2K2KjP4Y1fqPjktfP2oas1FL-TQoCzxDJW4Eoio2fF5nBYyVc5N_eIF1NIAaxAWDthLRw7XTWju8mFTxVVNV7AHTFF03oaOtbfRTVce7EUC6TjUFRXX1krmEpKgIQtd2YtSu2VFAVxKEa5MoPlOWOKzKgWN58kQvxjGA"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-semibold">SegmentIQ</span></div><span class="hidden xl:inline-block px-space-sm py-space-xs rounded bg-surface-container text-on-surface-variant font-label-tag text-label-tag uppercase tracking-wider">Retail RFM Suite</span></div><nav class="hidden lg:flex items-center gap-space-xs" data-active-classes="bg-surface-container-high text-on-surface font-medium rounded-lg"><a class="px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="overview-rfm-segmentation" href="#">Overview &amp; RFM Segmentation</a><a class="px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="customer-directory" href="#">Customer Directory</a><a class="px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="marketing-campaigns" href="#">Marketing Campaigns</a><a class="px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="category-performance" href="#">Category Performance</a></nav><div class="flex items-center gap-space-md flex-shrink-0"><div class="hidden md:flex items-center gap-space-xs bg-surface-container-low px-space-md py-space-xs rounded-lg"><span class="material-symbols-outlined text-secondary text-[16px]">date_range</span><span class="font-label-numeric text-label-numeric text-on-surface-variant">2023 - 2024 Data Window</span></div><button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[16px]">file_download</span><span class="font-body-sm text-body-sm font-medium">Export</span></button><button class="relative p-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-tertiary-fixed-dim"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface min-h-[calc(100vh-4rem)]"><div class="flex flex-col w-full">
+<div class="w-full px-margin-desktop py-space-xl flex flex-col gap-space-xl">
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low p-space-lg shadow-xl">
+<div class="absolute -right-24 -top-24 w-96 h-96 rounded-full bg-primary/10 blur-3xl pointer-events-none"></div>
+<div class="absolute right-1/3 bottom-0 w-64 h-64 rounded-full bg-tertiary-container/10 blur-2xl pointer-events-none"></div>
+<div class="relative flex flex-col xl:flex-row xl:items-end justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-sm py-space-xs rounded bg-surface-container-high text-primary font-label-tag text-label-tag uppercase tracking-wider">K-Means Model (k=4)</span>
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span class="font-label-tag text-label-tag text-on-surface-variant">Validated against 1,000 Transactions</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-on-surface tracking-tight">Executive RFM Segmentation &amp; Cohorts</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Synthesized behavioral clusters across 2023 retail sales dataset ($456,000 GMV). Actionable retention, VIP monetization, and churn prevention intelligence.</p>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface transition-colors shadow-sm" onclick="triggerToast('Syncing cluster weights with Snowflake warehouse...')" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">sync</span>
+<span class="font-label-numeric text-label-numeric">Recompute Clusters</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-primary hover:bg-primary-container text-on-primary transition-colors shadow-md" onclick="triggerModal()" type="button">
+<span class="material-symbols-outlined text-[18px]">rocket_launch</span>
+<span class="font-body-md text-body-md font-semibold">Launch Strategy Engine</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md mt-space-xl">
+<div class="p-space-md rounded-lg bg-surface-container shadow-md flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-tag text-label-tag uppercase text-on-surface-variant">Gross Transactions</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">receipt_long</span>
+</div>
+<div class="mt-space-sm flex items-baseline gap-space-xs">
+<span class="font-label-kpi text-label-kpi text-on-surface">1,000</span>
+<span class="font-body-sm text-body-sm text-tertiary flex items-center font-medium">
+<span class="material-symbols-outlined text-[14px]">north</span>100%
+            </span>
+</div>
+<div class="mt-space-xs flex justify-between items-center text-on-surface-variant font-label-tag text-label-tag">
+<span>Audit window: 2023 FY</span>
+<span class="text-secondary font-label-numeric">429 Unique Customers</span>
+</div>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container shadow-md flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-tag text-label-tag uppercase text-on-surface-variant">Net Sales Volume</span>
+<span class="material-symbols-outlined text-tertiary text-[20px]">payments</span>
+</div>
+<div class="mt-space-sm flex items-baseline gap-space-xs">
+<span class="font-label-kpi text-label-kpi text-on-surface">$456,000</span>
+<span class="font-body-sm text-body-sm text-tertiary flex items-center font-medium">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>+18.4% YoY
+            </span>
+</div>
+<div class="mt-space-xs flex justify-between items-center text-on-surface-variant font-label-tag text-label-tag">
+<span>Target: $440,000</span>
+<span class="text-tertiary font-label-numeric">+$16k Surpass</span>
+</div>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container shadow-md flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-tag text-label-tag uppercase text-on-surface-variant">Avg Order Value (AOV)</span>
+<span class="material-symbols-outlined text-primary text-[20px]">shopping_cart_checkout</span>
+</div>
+<div class="mt-space-sm flex items-baseline gap-space-xs">
+<span class="font-label-kpi text-label-kpi text-on-surface">$456.00</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-label-numeric">/ order</span>
+</div>
+<div class="mt-space-xs flex justify-between items-center text-on-surface-variant font-label-tag text-label-tag">
+<span>Avg Basket Depth</span>
+<span class="text-primary font-label-numeric">2.5 Units</span>
+</div>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container shadow-md flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-tag text-label-tag uppercase text-on-surface-variant">Cluster Silhouette</span>
+<span class="material-symbols-outlined text-secondary-container text-[20px]">hub</span>
+</div>
+<div class="mt-space-sm flex items-baseline gap-space-xs">
+<span class="font-label-kpi text-label-kpi text-on-surface">4 Cohorts</span>
+<span class="font-body-sm text-body-sm text-secondary-fixed-dim font-medium">k=4 Opt.</span>
+</div>
+<div class="mt-space-xs flex justify-between items-center text-on-surface-variant font-label-tag text-label-tag">
+<span>Inertia Variance</span>
+<span class="text-secondary-fixed-dim font-label-numeric">0.68 Score</span>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<div class="rounded-xl bg-surface-container-low p-space-lg shadow-lg flex flex-col justify-between hover:bg-surface-container transition-all">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-space-xs rounded bg-tertiary-container/30 text-tertiary font-label-tag text-label-tag font-semibold">SEGMENT 1</span>
+<span class="w-3 h-3 rounded-full bg-tertiary"></span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Big Spenders</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">Top tier gross revenue contributors with high monetary velocity.</p>
+</div>
+<div class="mt-space-sm p-space-sm rounded bg-surface-container-lowest flex items-center justify-between">
+<span class="font-label-tag text-label-tag text-on-surface-variant">SIZE &amp; SHARE</span>
+<span class="font-label-numeric text-label-numeric text-on-surface font-semibold">143 Users (33.3%)</span>
+</div>
+<div class="space-y-space-xs mt-space-xs">
+<div class="flex justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Mean Basket</span>
+<span class="font-label-numeric text-on-surface font-semibold">$1,420.50</span>
+</div>
+<div class="flex justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Avg Recency</span>
+<span class="font-label-numeric text-tertiary">14.2 Days</span>
+</div>
+<div class="flex justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Frequency</span>
+<span class="font-label-numeric text-on-surface">4.8 Orders/yr</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-md bg-surface-container-high/40 -mx-space-lg -mb-space-lg p-space-md rounded-b-xl flex flex-col gap-space-xs">
+<span class="font-label-tag text-label-tag text-tertiary font-medium">RECOMMENDED PLAYBOOK</span>
+<p class="font-body-sm text-body-sm text-on-surface">VIP concierge desk, exclusive seasonal preview catalogs, private showroom privileges.</p>
+</div>
+</div>
+<div class="rounded-xl bg-surface-container-low p-space-lg shadow-lg flex flex-col justify-between hover:bg-surface-container transition-all">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-space-xs rounded bg-secondary-container/20 text-secondary font-label-tag text-label-tag font-semibold">SEGMENT 2</span>
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Recent Customers</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">First-time or recent conversions ready for nurture sequences.</p>
+</div>
+<div class="mt-space-sm p-space-sm rounded bg-surface-container-lowest flex items-center justify-between">
+<span class="font-label-tag text-label-tag text-on-surface-variant">SIZE &amp; SHARE</span>
+<span class="font-label-numeric text-label-numeric text-on-surface font-semibold">114 Users (26.6%)</span>
+</div>
+<div class="space-y-space-xs mt-space-xs">
+<div class="flex justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Mean Basket</span>
+<span class="font-label-numeric text-on-surface font-semibold">$380.20</span>
+</div>
+<div class="flex justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Avg Recency</span>
+<span class="font-label-numeric text-secondary">8.6 Days</span>
+</div>
+<div class="flex justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Frequency</span>
+<span class="font-label-numeric text-on-surface">1.2 Orders/yr</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-md bg-surface-container-high/40 -mx-space-lg -mb-space-lg p-space-md rounded-b-xl flex flex-col gap-space-xs">
+<span class="font-label-tag text-label-tag text-secondary font-medium">RECOMMENDED PLAYBOOK</span>
+<p class="font-body-sm text-body-sm text-on-surface">Trigger onboarding welcome drip, offer $25 secondary purchase voucher, prompt NPS rating.</p>
+</div>
+</div>
+<div class="rounded-xl bg-surface-container-low p-space-lg shadow-lg flex flex-col justify-between hover:bg-surface-container transition-all">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-space-xs rounded bg-error-container/30 text-error font-label-tag text-label-tag font-semibold">SEGMENT 3</span>
+<span class="w-3 h-3 rounded-full bg-error"></span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">At Risk</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">High historical revenue buyers who have ceased transacting &gt;90 days.</p>
+</div>
+<div class="mt-space-sm p-space-sm rounded bg-surface-container-lowest flex items-center justify-between">
+<span class="font-label-tag text-label-tag text-on-surface-variant">SIZE &amp; SHARE</span>
+<span class="font-label-numeric text-label-numeric text-on-surface font-semibold">96 Users (22.4%)</span>
+</div>
+<div class="space-y-space-xs mt-space-xs">
+<div class="flex justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Mean Basket</span>
+<span class="font-label-numeric text-on-surface font-semibold">$510.40</span>
+</div>
+<div class="flex justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Avg Recency</span>
+<span class="font-label-numeric text-error">118.4 Days</span>
+</div>
+<div class="flex justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Frequency</span>
+<span class="font-label-numeric text-on-surface">2.4 Orders/yr</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-md bg-surface-container-high/40 -mx-space-lg -mb-space-lg p-space-md rounded-b-xl flex flex-col gap-space-xs">
+<span class="font-label-tag text-label-tag text-error font-medium">RECOMMENDED PLAYBOOK</span>
+<p class="font-body-sm text-body-sm text-on-surface">Automated 'We Miss You' dynamic win-back promo with time-gated 20% discount code.</p>
+</div>
+</div>
+<div class="rounded-xl bg-surface-container-low p-space-lg shadow-lg flex flex-col justify-between hover:bg-surface-container transition-all">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-space-xs rounded bg-primary-container/20 text-primary-fixed-dim font-label-tag text-label-tag font-semibold">SEGMENT 4</span>
+<span class="w-3 h-3 rounded-full bg-primary"></span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Frequent Low Spenders</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">Highly committed recurring buyers with low individual basket amounts.</p>
+</div>
+<div class="mt-space-sm p-space-sm rounded bg-surface-container-lowest flex items-center justify-between">
+<span class="font-label-tag text-label-tag text-on-surface-variant">SIZE &amp; SHARE</span>
+<span class="font-label-numeric text-label-numeric text-on-surface font-semibold">76 Users (17.7%)</span>
+</div>
+<div class="space-y-space-xs mt-space-xs">
+<div class="flex justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Mean Basket</span>
+<span class="font-label-numeric text-on-surface font-semibold">$195.10</span>
+</div>
+<div class="flex justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Avg Recency</span>
+<span class="font-label-numeric text-primary-fixed-dim">22.1 Days</span>
+</div>
+<div class="flex justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Frequency</span>
+<span class="font-label-numeric text-on-surface">5.3 Orders/yr</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-md bg-surface-container-high/40 -mx-space-lg -mb-space-lg p-space-md rounded-b-xl flex flex-col gap-space-xs">
+<span class="font-label-tag text-label-tag text-primary-fixed-dim font-medium">RECOMMENDED PLAYBOOK</span>
+<p class="font-body-sm text-body-sm text-on-surface">Incentivize multi-pack bundles, free shipping thresholds at $250, beauty/clothing cross-sell.</p>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<div class="lg:col-span-8 rounded-xl bg-surface-container-low p-space-lg shadow-xl flex flex-col justify-between">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-md">
+<div>
+<span class="font-label-tag text-label-tag text-primary uppercase tracking-wider">Multivariate Behavioral Matrix</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">RFM 3D Distribution Matrix</h3>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container px-space-sm py-space-xs rounded-lg">
+<span class="font-label-tag text-label-tag text-on-surface-variant">X: Recency</span>
+<span class="text-outline-variant font-label-tag">•</span>
+<span class="font-label-tag text-label-tag text-on-surface-variant">Y: Frequency</span>
+<span class="text-outline-variant font-label-tag">•</span>
+<span class="font-label-tag text-label-tag text-on-surface-variant">Radius: Monetary</span>
+</div>
+</div>
+<div class="relative w-full h-72 bg-surface-container-lowest rounded-lg p-space-md overflow-hidden flex flex-col justify-between">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent pointer-events-none"></div>
+<div class="absolute inset-x-8 top-10 bottom-10 flex flex-col justify-between pointer-events-none opacity-20">
+<div class="w-full h-px bg-outline-variant"></div>
+<div class="w-full h-px bg-outline-variant"></div>
+<div class="w-full h-px bg-outline-variant"></div>
+<div class="w-full h-px bg-outline-variant"></div>
+</div>
+<svg class="w-full h-full" fill="none" viewbox="0 0 600 240" xmlns="http://www.w3.org/2000/svg">
+<line stroke="#31394d" stroke-width="1.5" x1="40" x2="580" y1="210" y2="210"></line>
+<line stroke="#31394d" stroke-width="1.5" x1="40" x2="40" y1="20" y2="210"></line>
+<text class="font-label-tag text-[10px]" fill="#908fa0" x="50" y="230">120d+ (Cold)</text>
+<text class="font-label-tag text-[10px]" fill="#908fa0" x="300" y="230">60d (Moderate)</text>
+<text class="font-label-tag text-[10px]" fill="#908fa0" x="530" y="230">0d (Fresh)</text>
+<text class="font-label-tag text-[10px]" fill="#908fa0" x="10" y="195">1x</text>
+<text class="font-label-tag text-[10px]" fill="#908fa0" x="10" y="115">3x</text>
+<text class="font-label-tag text-[10px]" fill="#908fa0" x="10" y="35">6x+</text>
+<g class="cursor-pointer transition-transform hover:scale-110">
+<circle cx="120" cy="140" fill="#ffb4ab" fill-opacity="0.35" r="18" stroke="#ffb4ab" stroke-width="1.5"></circle>
+<circle cx="105" cy="155" fill="#ffb4ab" fill-opacity="0.3" r="14" stroke="#ffb4ab" stroke-width="1"></circle>
+<circle cx="140" cy="160" fill="#ffb4ab" fill-opacity="0.25" r="22" stroke="#ffb4ab" stroke-width="1"></circle>
+<circle cx="160" cy="120" fill="#ffb4ab" fill-opacity="0.4" r="16" stroke="#ffb4ab" stroke-width="1.5"></circle>
+<text class="font-label-tag text-[10px] font-semibold" fill="#ffb4ab" x="100" y="110">At Risk (Dormant High-Value)</text>
+</g>
+<g class="cursor-pointer transition-transform hover:scale-110">
+<circle cx="480" cy="40" fill="#4edea3" fill-opacity="0.35" r="28" stroke="#4edea3" stroke-width="2"></circle>
+<circle cx="530" cy="60" fill="#4edea3" fill-opacity="0.3" r="24" stroke="#4edea3" stroke-width="1.5"></circle>
+<circle cx="450" cy="80" fill="#4edea3" fill-opacity="0.25" r="32" stroke="#4edea3" stroke-width="2"></circle>
+<circle cx="510" cy="95" fill="#4edea3" fill-opacity="0.4" r="20" stroke="#4edea3" stroke-width="1"></circle>
+<text class="font-label-tag text-[10px] font-semibold" fill="#4edea3" x="430" y="25">Big Spenders (VIP Cluster)</text>
+</g>
+<g class="cursor-pointer transition-transform hover:scale-110">
+<circle cx="490" cy="170" fill="#89ceff" fill-opacity="0.4" r="12" stroke="#89ceff" stroke-width="1.5"></circle>
+<circle cx="540" cy="165" fill="#89ceff" fill-opacity="0.3" r="15" stroke="#89ceff" stroke-width="1"></circle>
+<circle cx="460" cy="180" fill="#89ceff" fill-opacity="0.35" r="11" stroke="#89ceff" stroke-width="1"></circle>
+<text class="font-label-tag text-[10px] font-semibold" fill="#89ceff" x="430" y="200">Recent Customers</text>
+</g>
+<g class="cursor-pointer transition-transform hover:scale-110">
+<circle cx="340" cy="70" fill="#c0c1ff" fill-opacity="0.35" r="14" stroke="#c0c1ff" stroke-width="1.5"></circle>
+<circle cx="370" cy="50" fill="#c0c1ff" fill-opacity="0.4" r="12" stroke="#c0c1ff" stroke-width="1"></circle>
+<circle cx="320" cy="90" fill="#c0c1ff" fill-opacity="0.3" r="13" stroke="#c0c1ff" stroke-width="1.5"></circle>
+<circle cx="390" cy="85" fill="#c0c1ff" fill-opacity="0.4" r="10" stroke="#c0c1ff" stroke-width="1"></circle>
+<text class="font-label-tag text-[10px] font-semibold" fill="#c0c1ff" x="270" y="40">Frequent Low Spenders</text>
+</g>
+</svg>
+</div>
+<div class="pt-space-md flex flex-wrap items-center justify-between gap-space-sm font-label-tag text-label-tag text-on-surface-variant">
+<div class="flex items-center gap-space-sm">
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-tertiary"></span> Big Spenders</span>
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-secondary"></span> Recent Customers</span>
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-error"></span> At Risk</span>
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-primary"></span> Frequent Low Spenders</span>
+</div>
+<span class="text-outline">Algorithm: Scikit-Learn KMeans(n_clusters=4, random_state=42)</span>
+</div>
+</div>
+<div class="lg:col-span-4 rounded-xl bg-surface-container-low p-space-lg shadow-xl flex flex-col justify-between gap-space-md">
+<div>
+<span class="font-label-tag text-label-tag text-secondary uppercase tracking-wider">Gross Revenue Contribution</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Category Balance</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Cross-performance distribution shows nearly equal 33% revenue parity across lines.</p>
+</div>
+<div class="flex flex-col gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex justify-between items-center font-body-sm text-body-sm">
+<span class="text-on-surface font-medium flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[16px]">devices</span> Electronics
+              </span>
+<span class="font-label-numeric text-on-surface font-semibold">$156,900 <span class="text-on-surface-variant font-normal">(34.4%)</span></span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 34.4%"></div>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex justify-between items-center font-body-sm text-body-sm">
+<span class="text-on-surface font-medium flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[16px]">checkroom</span> Clothing
+              </span>
+<span class="font-label-numeric text-on-surface font-semibold">$155,580 <span class="text-on-surface-variant font-normal">(34.1%)</span></span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 34.1%"></div>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex justify-between items-center font-body-sm text-body-sm">
+<span class="text-on-surface font-medium flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-[16px]">spa</span> Beauty
+              </span>
+<span class="font-label-numeric text-on-surface font-semibold">$143,510 <span class="text-on-surface-variant font-normal">(31.5%)</span></span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full rounded-full" style="width: 31.5%"></div>
+</div>
+</div>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-high/60 flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-secondary-fixed-dim">
+<span class="material-symbols-outlined text-[18px]">lightbulb</span>
+<span class="font-label-tag text-label-tag uppercase font-semibold">Merchandising Insight</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Clothing and Electronics drive 68.5% of Big Spender cart conversions, while Beauty is the prime gateway acquisition category for Recent Customers.</p>
+</div>
+</div>
+</div>
+<div class="rounded-xl bg-surface-container-low p-space-lg shadow-xl flex flex-col gap-space-lg">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div>
+<span class="font-label-tag text-label-tag text-primary uppercase tracking-wider">Granular Customer Directory</span>
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight">Active Customer Cohort Ledger</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Live RFM scoring derived from 1,000 transaction records with predictive tags.</p>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="relative min-w-[240px]">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline-variant text-[18px]">search</span>
+<input class="w-full pl-9 pr-4 py-2 rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-outline-variant font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary shadow-inner" id="cohortSearch" onkeyup="filterLedger()" placeholder="Search ID, Category, RFM..." type="text"/>
+</div>
+<button class="flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors" onclick="exportLedgerCSV()" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span class="font-body-sm text-body-sm font-medium">Export CSV</span>
+</button>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs pb-space-xs">
+<button class="segment-filter-btn px-space-md py-1.5 rounded-full bg-primary text-on-primary font-body-sm text-body-sm font-medium transition-all shadow-sm" onclick="filterBySegment('ALL', this)" type="button">All Customers (429)</button>
+<button class="segment-filter-btn px-space-md py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm font-medium transition-all" onclick="filterBySegment('Big Spenders', this)" type="button">Big Spenders (143)</button>
+<button class="segment-filter-btn px-space-md py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm font-medium transition-all" onclick="filterBySegment('Recent Customers', this)" type="button">Recent Customers (114)</button>
+<button class="segment-filter-btn px-space-md py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm font-medium transition-all" onclick="filterBySegment('At Risk', this)" type="button">At Risk (96)</button>
+<button class="segment-filter-btn px-space-md py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm font-medium transition-all" onclick="filterBySegment('Frequent Low Spenders', this)" type="button">Frequent Low Spenders (76)</button>
+</div>
+<div class="w-full overflow-x-auto rounded-lg bg-surface-container-lowest">
+<table class="w-full text-left border-collapse" id="customerLedgerTable">
+<thead>
+<tr class="bg-surface-container-high text-on-surface-variant font-label-tag text-label-tag uppercase tracking-wider">
+<th class="py-space-md px-space-md">Customer ID</th>
+<th class="py-space-md px-space-md">Demographics</th>
+<th class="py-space-md px-space-md">Core Category</th>
+<th class="py-space-md px-space-md">Recency</th>
+<th class="py-space-md px-space-md">Frequency</th>
+<th class="py-space-md px-space-md">Total Spend</th>
+<th class="py-space-md px-space-md">RFM Code</th>
+<th class="py-space-md px-space-md">Cluster Tag</th>
+<th class="py-space-md px-space-md text-right">Quick Action</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container font-body-sm text-body-sm text-on-surface" id="ledgerBody">
+<tr class="hover:bg-surface-container transition-colors" data-segment="Big Spenders">
+<td class="py-space-md px-space-md font-label-numeric text-primary font-semibold">CUST001</td>
+<td class="py-space-md px-space-md text-on-surface-variant">34 • Female</td>
+<td class="py-space-md px-space-md"><span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-tag">Electronics</span></td>
+<td class="py-space-md px-space-md font-label-numeric text-tertiary">4 days</td>
+<td class="py-space-md px-space-md font-label-numeric">5 orders</td>
+<td class="py-space-md px-space-md font-label-numeric font-semibold">$1,950.00</td>
+<td class="py-space-md px-space-md font-label-numeric text-primary">5-5-5</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-tertiary-container/30 text-tertiary font-label-tag text-label-tag font-semibold">Big Spenders</span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<button class="px-space-sm py-1 rounded bg-surface-container hover:bg-surface-bright text-on-surface font-body-sm text-[11px] transition-colors" onclick="triggerToast('VIP Concierge outreach logged for CUST001')" type="button">Concierge</button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container transition-colors" data-segment="Recent Customers">
+<td class="py-space-md px-space-md font-label-numeric text-primary font-semibold">CUST004</td>
+<td class="py-space-md px-space-md text-on-surface-variant">28 • Male</td>
+<td class="py-space-md px-space-md"><span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-tag">Beauty</span></td>
+<td class="py-space-md px-space-md font-label-numeric text-secondary">6 days</td>
+<td class="py-space-md px-space-md font-label-numeric">1 order</td>
+<td class="py-space-md px-space-md font-label-numeric font-semibold">$320.00</td>
+<td class="py-space-md px-space-md font-label-numeric text-primary">5-1-3</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-secondary-container/20 text-secondary font-label-tag text-label-tag font-semibold">Recent Customers</span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<button class="px-space-sm py-1 rounded bg-surface-container hover:bg-surface-bright text-on-surface font-body-sm text-[11px] transition-colors" onclick="triggerToast('Welcome onboarding sequence sent to CUST004')" type="button">Onboard</button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container transition-colors" data-segment="At Risk">
+<td class="py-space-md px-space-md font-label-numeric text-primary font-semibold">CUST009</td>
+<td class="py-space-md px-space-md text-on-surface-variant">42 • Female</td>
+<td class="py-space-md px-space-md"><span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-tag">Clothing</span></td>
+<td class="py-space-md px-space-md font-label-numeric text-error">132 days</td>
+<td class="py-space-md px-space-md font-label-numeric">3 orders</td>
+<td class="py-space-md px-space-md font-label-numeric font-semibold">$890.00</td>
+<td class="py-space-md px-space-md font-label-numeric text-primary">1-3-4</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-error-container/30 text-error font-label-tag text-label-tag font-semibold">At Risk</span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<button class="px-space-sm py-1 rounded bg-error-container text-on-error-container font-body-sm text-[11px] font-semibold transition-colors" onclick="triggerToast('20% Win-back promo code queued for CUST009')" type="button">Win-Back</button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container transition-colors" data-segment="Frequent Low Spenders">
+<td class="py-space-md px-space-md font-label-numeric text-primary font-semibold">CUST013</td>
+<td class="py-space-md px-space-md text-on-surface-variant">22 • Male</td>
+<td class="py-space-md px-space-md"><span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-tag">Beauty</span></td>
+<td class="py-space-md px-space-md font-label-numeric text-on-surface-variant">19 days</td>
+<td class="py-space-md px-space-md font-label-numeric">6 orders</td>
+<td class="py-space-md px-space-md font-label-numeric font-semibold">$240.00</td>
+<td class="py-space-md px-space-md font-label-numeric text-primary">4-5-1</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-primary-container/20 text-primary-fixed-dim font-label-tag text-label-tag font-semibold">Frequent Low Spenders</span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<button class="px-space-sm py-1 rounded bg-surface-container hover:bg-surface-bright text-on-surface font-body-sm text-[11px] transition-colors" onclick="triggerToast('Bundle cross-sell pushed to CUST013 app')" type="button">Bundle Deal</button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container transition-colors" data-segment="Big Spenders">
+<td class="py-space-md px-space-md font-label-numeric text-primary font-semibold">CUST017</td>
+<td class="py-space-md px-space-md text-on-surface-variant">51 • Male</td>
+<td class="py-space-md px-space-md"><span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-tag">Electronics</span></td>
+<td class="py-space-md px-space-md font-label-numeric text-tertiary">9 days</td>
+<td class="py-space-md px-space-md font-label-numeric">4 orders</td>
+<td class="py-space-md px-space-md font-label-numeric font-semibold">$1,640.00</td>
+<td class="py-space-md px-space-md font-label-numeric text-primary">5-4-5</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-tertiary-container/30 text-tertiary font-label-tag text-label-tag font-semibold">Big Spenders</span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<button class="px-space-sm py-1 rounded bg-surface-container hover:bg-surface-bright text-on-surface font-body-sm text-[11px] transition-colors" onclick="triggerToast('VIP Concierge outreach logged for CUST017')" type="button">Concierge</button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container transition-colors" data-segment="At Risk">
+<td class="py-space-md px-space-md font-label-numeric text-primary font-semibold">CUST022</td>
+<td class="py-space-md px-space-md text-on-surface-variant">39 • Female</td>
+<td class="py-space-md px-space-md"><span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-tag">Clothing</span></td>
+<td class="py-space-md px-space-md font-label-numeric text-error">98 days</td>
+<td class="py-space-md px-space-md font-label-numeric">3 orders</td>
+<td class="py-space-md px-space-md font-label-numeric font-semibold">$620.00</td>
+<td class="py-space-md px-space-md font-label-numeric text-primary">2-3-3</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-error-container/30 text-error font-label-tag text-label-tag font-semibold">At Risk</span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<button class="px-space-sm py-1 rounded bg-error-container text-on-error-container font-body-sm text-[11px] font-semibold transition-colors" onclick="triggerToast('20% Win-back promo code queued for CUST022')" type="button">Win-Back</button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container transition-colors" data-segment="Recent Customers">
+<td class="py-space-md px-space-md font-label-numeric text-primary font-semibold">CUST029</td>
+<td class="py-space-md px-space-md text-on-surface-variant">31 • Female</td>
+<td class="py-space-md px-space-md"><span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-tag">Clothing</span></td>
+<td class="py-space-md px-space-md font-label-numeric text-secondary">2 days</td>
+<td class="py-space-md px-space-md font-label-numeric">1 order</td>
+<td class="py-space-md px-space-md font-label-numeric font-semibold">$410.00</td>
+<td class="py-space-md px-space-md font-label-numeric text-primary">5-1-4</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-secondary-container/20 text-secondary font-label-tag text-label-tag font-semibold">Recent Customers</span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<button class="px-space-sm py-1 rounded bg-surface-container hover:bg-surface-bright text-on-surface font-body-sm text-[11px] transition-colors" onclick="triggerToast('Welcome onboarding sequence sent to CUST029')" type="button">Onboard</button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container transition-colors" data-segment="Frequent Low Spenders">
+<td class="py-space-md px-space-md font-label-numeric text-primary font-semibold">CUST036</td>
+<td class="py-space-md px-space-md text-on-surface-variant">45 • Male</td>
+<td class="py-space-md px-space-md"><span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-tag">Electronics</span></td>
+<td class="py-space-md px-space-md font-label-numeric text-on-surface-variant">26 days</td>
+<td class="py-space-md px-space-md font-label-numeric">5 orders</td>
+<td class="py-space-md px-space-md font-label-numeric font-semibold">$180.00</td>
+<td class="py-space-md px-space-md font-label-numeric text-primary">3-5-1</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-primary-container/20 text-primary-fixed-dim font-label-tag text-label-tag font-semibold">Frequent Low Spenders</span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<button class="px-space-sm py-1 rounded bg-surface-container hover:bg-surface-bright text-on-surface font-body-sm text-[11px] transition-colors" onclick="triggerToast('Bundle cross-sell pushed to CUST036 app')" type="button">Bundle Deal</button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container transition-colors" data-segment="Big Spenders">
+<td class="py-space-md px-space-md font-label-numeric text-primary font-semibold">CUST044</td>
+<td class="py-space-md px-space-md text-on-surface-variant">40 • Female</td>
+<td class="py-space-md px-space-md"><span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-tag">Beauty</span></td>
+<td class="py-space-md px-space-md font-label-numeric text-tertiary">11 days</td>
+<td class="py-space-md px-space-md font-label-numeric">6 orders</td>
+<td class="py-space-md px-space-md font-label-numeric font-semibold">$1,720.00</td>
+<td class="py-space-md px-space-md font-label-numeric text-primary">5-5-5</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-tertiary-container/30 text-tertiary font-label-tag text-label-tag font-semibold">Big Spenders</span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<button class="px-space-sm py-1 rounded bg-surface-container hover:bg-surface-bright text-on-surface font-body-sm text-[11px] transition-colors" onclick="triggerToast('VIP Concierge outreach logged for CUST044')" type="button">Concierge</button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container transition-colors" data-segment="At Risk">
+<td class="py-space-md px-space-md font-label-numeric text-primary font-semibold">CUST048</td>
+<td class="py-space-md px-space-md text-on-surface-variant">60 • Male</td>
+<td class="py-space-md px-space-md"><span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-tag">Electronics</span></td>
+<td class="py-space-md px-space-md font-label-numeric text-error">145 days</td>
+<td class="py-space-md px-space-md font-label-numeric">2 orders</td>
+<td class="py-space-md px-space-md font-label-numeric font-semibold">$540.00</td>
+<td class="py-space-md px-space-md font-label-numeric text-primary">1-2-3</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-error-container/30 text-error font-label-tag text-label-tag font-semibold">At Risk</span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<button class="px-space-sm py-1 rounded bg-error-container text-on-error-container font-body-sm text-[11px] font-semibold transition-colors" onclick="triggerToast('20% Win-back promo code queued for CUST048')" type="button">Win-Back</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-sm pt-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<span>Showing 10 sample records from 429 total classified customers</span>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-sm py-1 rounded bg-surface-container text-on-surface disabled:opacity-40" disabled="" type="button">Previous</button>
+<span class="px-2 font-label-numeric text-primary font-medium">Page 1 of 43</span>
+<button class="px-space-sm py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface" onclick="triggerToast('Loading subsequent batch records...')" type="button">Next</button>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg">
+<div class="rounded-xl bg-surface-container-low p-space-lg shadow-xl flex flex-col justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-tertiary-container/30 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined">workspace_premium</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">VIP Concierge &amp; Tiers</h3>
+<span class="font-label-tag text-label-tag text-tertiary">Cluster 1 Target • $203k Potential</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant my-space-md">143 Big Spenders represent 33% of the customer base but drive over 52% of total retail revenues. Dedicating direct high-touch concierge support protects high monetary velocity.</p>
+<div class="p-space-sm rounded bg-surface-container space-y-2">
+<div class="flex items-center gap-2 text-on-surface font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-tertiary text-[16px]">check</span> Early access to new hardware launches
+          </div>
+<div class="flex items-center gap-2 text-on-surface font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-tertiary text-[16px]">check</span> Dedicated zero-wait return privileges
+          </div>
+</div>
+<button class="mt-space-md w-full py-space-sm rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-body-sm text-body-sm font-semibold transition-colors" onclick="triggerToast('Enrolling 143 Big Spenders into VIP Concierge Tier')" type="button">
+          Activate VIP Tier Automation
+        </button>
+</div>
+<div class="rounded-xl bg-surface-container-low p-space-lg shadow-xl flex flex-col justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-error-container/30 flex items-center justify-center text-error">
+<span class="material-symbols-outlined">alarm_on</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Win-Back Protocol</h3>
+<span class="font-label-tag text-label-tag text-error">Cluster 3 Target • 96 Accounts</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant my-space-md">At Risk accounts have an average recency of 118 days. Based on the RFM decay curve, accounts exceeding 120 days have an 82% permanent churn probability without immediate incentive.</p>
+<div class="p-space-sm rounded bg-surface-container space-y-2">
+<div class="flex items-center gap-2 text-on-surface font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-error text-[16px]">check</span> Trigger 20% discount with 7-day expiration
+          </div>
+<div class="flex items-center gap-2 text-on-surface font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-error text-[16px]">check</span> Automated SMS re-engagement trigger
+          </div>
+</div>
+<button class="mt-space-md w-full py-space-sm rounded-lg bg-error-container hover:bg-error/30 text-on-error-container font-body-sm text-body-sm font-semibold transition-colors" onclick="triggerToast('Win-Back SMS &amp; Email campaign launched for 96 At Risk users')" type="button">
+          Deploy Reactivation Sequence
+        </button>
+</div>
+<div class="rounded-xl bg-surface-container-low p-space-lg shadow-xl flex flex-col justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-primary-container/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">shopping_bag</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Cross-Category Upsell</h3>
+<span class="font-label-tag text-label-tag text-primary">Clusters 2 &amp; 4 Target • 190 Accounts</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant my-space-md">Frequent Low Spenders maintain high engagement (5.3 orders/yr) but small baskets ($195). Bundling beauty products with apparel will lift AOV closer to the $456 catalog baseline.</p>
+<div class="p-space-sm rounded bg-surface-container space-y-2">
+<div class="flex items-center gap-2 text-on-surface font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-primary text-[16px]">check</span> Free shipping threshold shifted to $250
+          </div>
+<div class="flex items-center gap-2 text-on-surface font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-primary text-[16px]">check</span> Bundle &amp; Save algorithmic checkout tiles
+          </div>
+</div>
+<button class="mt-space-md w-full py-space-sm rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-body-sm text-body-sm font-semibold transition-colors" onclick="triggerToast('Dynamic bundle rules pushed to e-commerce storefront')" type="button">
+          Configure Basket Elevators
+        </button>
+</div>
+</div>
+</div>
+<div class="fixed inset-0 z-50 hidden flex items-center justify-center bg-surface-container-lowest/80 backdrop-blur-md px-margin-desktop" id="campaignModal">
+<div class="w-full max-w-xl rounded-xl bg-surface-container-low p-space-xl shadow-2xl flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">send</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Deploy Multi-Cohort Campaign</h3>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface" onclick="closeModal()" type="button">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-md">
+<div>
+<label class="font-label-tag text-label-tag uppercase text-on-surface-variant block mb-1">Target Cluster Segment</label>
+<select class="w-full px-space-md py-space-sm rounded-lg bg-surface-container text-on-surface font-body-md text-body-md focus:outline-none">
+<option>All Segments (429 recipients)</option>
+<option selected="">Big Spenders (143 recipients) - VIP Focus</option>
+<option>At Risk (96 recipients) - Win-back 20%</option>
+<option>Recent Customers (114 recipients) - Onboarding</option>
+<option>Frequent Low Spenders (76 recipients) - Cross-sell</option>
+</select>
+</div>
+<div>
+<label class="font-label-tag text-label-tag uppercase text-on-surface-variant block mb-1">Campaign Channel</label>
+<div class="grid grid-cols-3 gap-space-xs">
+<button class="py-space-xs px-space-sm rounded bg-primary text-on-primary font-body-sm text-body-sm font-medium" type="button">Omnichannel</button>
+<button class="py-space-xs px-space-sm rounded bg-surface-container text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm" type="button">Email Only</button>
+<button class="py-space-xs px-space-sm rounded bg-surface-container text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm" type="button">SMS Direct</button>
+</div>
+</div>
+<div>
+<label class="font-label-tag text-label-tag uppercase text-on-surface-variant block mb-1">Budget Allocation</label>
+<input class="w-full px-space-md py-space-sm rounded-lg bg-surface-container text-on-surface font-label-numeric text-label-numeric focus:outline-none" type="text" value="$5,000.00"/>
+</div>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-xs">
+<button class="px-space-md py-space-sm rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-body-sm text-body-sm" onclick="closeModal()" type="button">Cancel</button>
+<button class="px-space-md py-space-sm rounded-lg bg-primary hover:bg-primary-container text-on-primary font-body-md text-body-md font-semibold transition-colors shadow-md" onclick="submitCampaign()" type="button">Deploy Live to Braze</button>
+</div>
+</div>
+</div>
+<div class="fixed bottom-6 right-6 z-50 hidden max-w-sm rounded-lg bg-surface-bright px-space-md py-space-sm shadow-xl text-on-surface font-body-sm text-body-sm flex items-center gap-space-sm" id="toastNotification">
+<span class="material-symbols-outlined text-tertiary text-[18px]">verified</span>
+<span id="toastMessage">Action dispatched successfully.</span>
+</div>
+</div>
+<script>
+  function filterBySegment(segmentName, btnElement) {
+    const buttons = document.querySelectorAll('.segment-filter-btn');
+    buttons.forEach(btn => {
+      btn.classList.remove('bg-primary', 'text-on-primary');
+      btn.classList.add('bg-surface-container', 'text-on-surface-variant');
+    });
+
+    btnElement.classList.add('bg-primary', 'text-on-primary');
+    btnElement.classList.remove('bg-surface-container', 'text-on-surface-variant');
+
+    const rows = document.querySelectorAll('#ledgerBody tr');
+    rows.forEach(row => {
+      const rowSegment = row.getAttribute('data-segment');
+      if (segmentName === 'ALL' || rowSegment === segmentName) {
+        row.style.display = '';
+      } else {
+        row.style.display = 'none';
+      }
+    });
+  }
+
+  function filterLedger() {
+    const searchVal = document.getElementById('cohortSearch').value.toLowerCase();
+    const rows = document.querySelectorAll('#ledgerBody tr');
+    rows.forEach(row => {
+      const text = row.innerText.toLowerCase();
+      row.style.display = text.includes(searchVal) ? '' : 'none';
+    });
+  }
+
+  function exportLedgerCSV() {
+    triggerToast('Generating full 429 customer cohort export as RFM_Analysis_2023.csv...');
+  }
+
+  function triggerModal() {
+    document.getElementById('campaignModal').classList.remove('hidden');
+  }
+
+  function closeModal() {
+    document.getElementById('campaignModal').classList.add('hidden');
+  }
+
+  function submitCampaign() {
+    closeModal();
+    triggerToast('Cohort campaign successfully deployed via automated CRM hooks.');
+  }
+
+  function triggerToast(msg) {
+    const toast = document.getElementById('toastNotification');
+    const toastMsg = document.getElementById('toastMessage');
+    toastMsg.innerText = msg;
+    toast.classList.remove('hidden');
+    setTimeout(() => {
+      toast.classList.add('hidden');
+    }, 3800);
+  }
+</script></main><footer class="w-full bg-surface-container-lowest py-space-xl"><div class="w-full px-margin-desktop flex flex-col sm:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm text-on-surface font-semibold">SegmentIQ</span><span class="font-label-tag text-label-tag text-on-surface-variant">• Retail Decision Intelligence Engine</span></div><div class="flex items-center gap-space-lg"><span class="font-label-numeric text-label-numeric text-on-surface-variant">RFM Model v4.2 • Sync Status: Live</span><span class="font-body-sm text-body-sm text-on-surface-variant">© 2024 SegmentIQ Inc. All rights reserved.</span></div></div></footer></body></html>
